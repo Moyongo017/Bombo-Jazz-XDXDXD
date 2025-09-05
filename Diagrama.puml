@@ -1,0 +1,91 @@
+@startuml
+
+
+class Caballero
+class CuernoBlanco
+class HollowKnight
+class Radiance
+class Hornet
+class Quirrel
+class Monomon
+class Lurien
+class Herrah
+class ReyPálido
+class DamaBlanca
+class Grimm
+class Zote
+class Elderbug
+class Seer
+
+
+class NightmareKingGrimm
+class SoulMaster
+class BrokenVessel
+class LostKin
+class Nosk
+class TraitorLord
+class Uumuu
+class WatcherKnights
+class HiveKnight
+class Galien
+class Gorb
+
+
+class Void
+class Hallownest
+class CiudadLágrimas
+class NidoProfundo
+class JardinesVerdes
+class PicoCristal
+class Abismo
+class SantuarioAlmas
+class Colmena
+
+
+HollowKnight --|> Caballero : es
+NightmareKingGrimm --|> Grimm : es
+LostKin --|> BrokenVessel : es
+
+Caballero *-- Void : tiene
+Caballero *-- Grimm : tiene Talismán
+Caballero *-- Zote : tiene relación
+Caballero *-- Hornet : tiene relación
+Caballero *-- Quirrel : tiene interacción
+Caballero *-- Seer : tiene contacto
+Caballero *-- Nail : tiene arma
+
+ReyPálido *-- Hallownest : fundó
+ReyPálido *-- DamaBlanca : tiene vínculo
+ReyPálido *-- CuernoBlanco : tiene hijo
+ReyPálido *-- HollowKnight : tiene creación
+
+HollowKnight *-- Void : tiene esencia
+Radiance *-- Void : tiene oposición
+Monomon *-- CiudadLágrimas : tiene ubicación
+Lurien *-- PicoCristal : tiene torre
+Herrah *-- NidoProfundo : tiene guarida
+
+Colmena *-- HiveKnight : tiene protector
+SantuarioAlmas *-- SoulMaster : tiene líder
+
+
+Caballero ..> Nail : usa
+Caballero ..> Grimm : usa poder
+Caballero ..> Seer : usa para obtener esencia
+Caballero ..> Hornet : usa ayuda ocasional
+Quirrel ..> Monomon : usa sabiduría
+WatcherKnights ..> Lurien : protege
+Uumuu ..> Monomon : protege
+TraitorLord ..> Herrah : enemigo de
+Nosk ..> Caballero : se disfraza
+
+
+Hallownest *-- CiudadLágrimas
+Hallownest *-- NidoProfundo
+Hallownest *-- JardinesVerdes
+Hallownest *-- PicoCristal
+Hallownest *-- Abismo
+Hallownest *-- Colmena
+Hallownest *-- SantuarioAlmas
+
+@enduml
